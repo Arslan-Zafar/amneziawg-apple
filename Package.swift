@@ -15,16 +15,16 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "WireGuardKit",
+            name: "AmneziaWireGuardKit",
             dependencies: ["WireGuardKitGo", "WireGuardKitC"]
         ),
         .target(
-            name: "WireGuardKitC",
+            name: "AmneziaWireGuardKitC",
             dependencies: [],
             publicHeadersPath: "."
         ),
         .target(
-            name: "WireGuardKitGo",
+            name: "AmneziaWireGuardKitGo",
             dependencies: [],
             exclude: [
                 "goruntime-boottime-over-monotonic.diff",
