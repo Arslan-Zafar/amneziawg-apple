@@ -10,21 +10,21 @@ let package = Package(
         .iOS(.v15)
     ],
     products: [
-        .library(name: "AmneziaWireGuardKit", targets: ["WireGuardKit"])
+        .library(name: "WireGuardKit", targets: ["WireGuardKit"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "AmneziaWireGuardKit",
+            name: "WireGuardKit",
             dependencies: ["WireGuardKitGo", "WireGuardKitC"]
         ),
         .target(
-            name: "AmneziaWireGuardKitC",
+            name: "WireGuardKitC",
             dependencies: [],
             publicHeadersPath: "."
         ),
         .target(
-            name: "AmneziaWireGuardKitGo",
+            name: "WireGuardKitGo",
             dependencies: [],
             exclude: [
                 "goruntime-boottime-over-monotonic.diff",
